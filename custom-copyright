@@ -9,19 +9,24 @@
 
 <style>
 .gownda-footer-bar {
-    width: 100%;
+    width: 100vw;             /* Forces bar to browser edge */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;       /* Centers it back after shifting left */
+    margin-right: -50vw;
+    
     display: flex; 
-    align-items: center;      /* Vertically centers the text */
-    justify-content: center;   /* Horizontally centers the text */
+    align-items: center;      
+    justify-content: center;   
     
     min-height: 50px;
     padding: 15px 0;
     text-align: center;
-    background-color: #077845; /* Your specific brand green */
-    color: #FFFFFF; /* Pure white text for best readability */
+    background-color: #077845; 
+    color: #FFFFFF; 
     font-size: 14px;
-    font-family: inherit; /* Matches your site's main font */
-    /* border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top line */ */
+    font-family: inherit;
 }
 
 .gownda-footer-bar p {
