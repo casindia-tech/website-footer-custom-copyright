@@ -1,0 +1,44 @@
+<div class="gownda-footer-bar">
+    <p>© <span id="copyright-year"></span> <strong>Gownda</strong>. A Brand Owned by <strong>Chandravi Agri Synergy</strong>. All Rights Reserved.</p>
+</div>
+
+<script>
+    // This script ensures the year always stays current
+    document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+</script>
+
+<style>
+.gownda-footer-bar {
+    width: 100vw;             /* Forces bar to browser edge */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;       /* Centers it back after shifting left */
+    margin-right: -50vw;
+    
+    display: flex; 
+    align-items: center;      
+    justify-content: center;   
+    
+    min-height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #056137; /* #077845; */
+    color: #FFFFFF; 
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.gownda-footer-bar p {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.gownda-footer-bar strong {
+    color: #FFFFFF;
+    font-weight: 600;
+    /* text-transform: uppercase; */ /* Makes brand names stand out slightly */
+    letter-spacing: 0.5px;
+}
+</style>
